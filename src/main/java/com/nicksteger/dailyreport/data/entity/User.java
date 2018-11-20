@@ -15,6 +15,12 @@ public class User {
     @Column(name = "Email")
     private String email;
 
+    @Column(name = "SMS_Number")
+    private String smsNumber;
+
+    @Column(name = "Twitter_Handle")
+    private String twitterHandle;
+
     public long getId() {
         return id;
     }
@@ -37,5 +43,21 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getSmsNumber() {
+        return smsNumber;
+    }
+
+    public void setSmsNumber(String smsNumber) {
+        this.smsNumber = smsNumber;
+    }
+
+    public String getTwitterHandle() {
+        return twitterHandle;
+    }
+
+    public void setTwitterHandle(String twitterHandle) {
+        this.twitterHandle = twitterHandle;
     }
 }

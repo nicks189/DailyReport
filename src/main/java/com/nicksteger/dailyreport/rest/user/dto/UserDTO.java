@@ -6,6 +6,8 @@ public class UserDTO implements Serializable {
 
     private String name;
     private String email;
+    private String smsNumber;
+    private String twitterHandle;
 
     public String getName() {
         return name;
@@ -21,5 +23,21 @@ public class UserDTO implements Serializable {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getSmsNumber() {
+        return smsNumber;
+    }
+
+    public void setSmsNumber(String smsNumber) {
+        this.smsNumber = smsNumber;
+    }
+
+    public String getTwitterHandle() {
+        return twitterHandle;
+    }
+
+    public void setTwitterHandle(String twitterHandle) {
+        this.twitterHandle = twitterHandle;
     }
 }
